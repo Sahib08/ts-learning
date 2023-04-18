@@ -71,3 +71,40 @@ function multiply(num: number | string): number | string {
     return num;
 } 
 
+let arr: (number | string)[] = [];
+
+arr = [1,2,3, 'abc'];
+
+// Tuples
+// Very rigid arrays
+const tup: [number, number] = [1, 2];
+
+// they are flexible with push and pop only
+tup.push(1,2)
+
+const exam: [string, number] = ['Charlie', 90];
+
+// Enums
+// Defined constant Values
+enum OrderStatus {
+    PENDING,
+    SHIPPED,
+    DELIVERED,
+    RETURNED
+}
+
+const myStatus = OrderStatus.DELIVERED;
+
+// can assign values
+enum WeekDay {
+    MON = 10,
+    TUES = 20,
+    WED = 30,
+}
+
+enum ArrowKeys {
+    UP = 'up',
+    DOWN = 'down',
+    LEFT = 'left',
+    RIGHT = 'right',
+}
